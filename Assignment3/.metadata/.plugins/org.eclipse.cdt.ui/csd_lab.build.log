@@ -1,0 +1,10 @@
+14:31:00 **** Incremental Build of configuration Debug for project csd_lab ****
+make all 
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+
+14:31:00 Build Finished (took 215ms)
+
