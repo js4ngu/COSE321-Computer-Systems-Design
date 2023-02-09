@@ -1,0 +1,5 @@
+int csd_main()
+{
+	xil_printf("Test\n");
+	return 0;
+}

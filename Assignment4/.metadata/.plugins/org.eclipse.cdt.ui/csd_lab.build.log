@@ -1,0 +1,29 @@
+17:08:33 **** Incremental Build of configuration Debug for project csd_lab ****
+make all 
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory main-build
+'Building file: ../src/csd_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/csd_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/csd_main.d" -MT"src/csd_main.o" -o "src/csd_main.o" "../src/csd_main.c"
+../src/csd_main.c: In function 'duration_set':
+../src/csd_main.c:64:25: warning: comparison between pointer and integer
+   64 |                 if (sel != NULL) break;
+      |                         ^~
+'Finished building: ../src/csd_main.c'
+' '
+'Building target: csd_lab.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bsplib/lib -o "csd_lab.elf"  ./src/csd_asm.o ./src/csd_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: csd_lab.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size csd_lab.elf  |tee "csd_lab.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72343	   2678	  22640	  97661	  17d7d	csd_lab.elf
+'Finished building: csd_lab.elf.size'
+' '
+
+17:08:34 Build Finished (took 532ms)
+
