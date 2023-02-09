@@ -260,3 +260,4 @@ selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_VITIS_IDE, "Launch Vitis 
 dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
 // Run Command: PAResourceCommand.PACommandNames_LAUNCH_VITIS_IDE
 dismissDialog("Launch Vitis IDE"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 1,479 MB. GUI used memory: 88 MB. Current time: 2/9/23, 6:53:49 PM KST
