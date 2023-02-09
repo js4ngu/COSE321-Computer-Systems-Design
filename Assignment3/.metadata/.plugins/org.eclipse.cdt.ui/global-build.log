@@ -1,16 +1,35 @@
 Nothing to build in platform 'csd_platform'
 
-14:31:00 **** Incremental Build of configuration Debug for project csd_lab ****
+13:11:11 **** Incremental Build of configuration Debug for project csd_lab ****
 make all 
 C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
-14:31:00 **** Incremental Build of configuration Debug for project csd_lab_system ****
+'Building file: ../src/csd_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/csd_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/csd_main.d" -MT"src/csd_main.o" -o "src/csd_main.o" "../src/csd_main.c"
+../src/csd_main.c: In function 'blink':
+../src/csd_main.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+   36 | }
+      | ^
+'Finished building: ../src/csd_main.c'
+' '
+'Building target: csd_lab.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bsplib/lib -o "csd_lab.elf"  ./src/csd_asm.o ./src/csd_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: csd_lab.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size csd_lab.elf  |tee "csd_lab.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51635	   2676	  22648	  76959	  12c9f	csd_lab.elf
+'Finished building: csd_lab.elf.size'
+' '
+13:11:11 **** Incremental Build of configuration Debug for project csd_lab_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 55449 C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm standalone_domain C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_lab_system/Debug/system.bif
-sdcard_gen --xpfm C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm --sys_config csd_platform --bif C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_lab_system/Debug/system.bif --bitstream C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_lab/_ide/bitstream/SoC_wrapper.bit --elf C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_lab/Debug/csd_lab.elf,ps7_cortexa9_0
-creating BOOT.BIN using C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_lab/_ide/bitstream/SoC_wrapper.bit
-Running C:/Xilinx/Vitis/2022.1/bin/bootgen  -image C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_lab_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+generate_system_bif.bat 61591 C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm standalone_domain C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/csd_lab_system/Debug/system.bif
+sdcard_gen --xpfm C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm --sys_config csd_platform --bif C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/csd_lab_system/Debug/system.bif --bitstream C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/csd_lab/_ide/bitstream/SoC_wrapper.bit --elf C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/csd_lab/Debug/csd_lab.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/csd_lab/_ide/bitstream/SoC_wrapper.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen  -image C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/csd_lab_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

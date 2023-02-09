@@ -2,24 +2,25 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Feb  8 12:27:34 2023
-# Process ID: 324900
-# Current directory: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent320824 C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment1\class_experiments_v21\class_experiments_v21.xpr
-# Log file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/vivado.log
-# Journal file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21\vivado.jou
+# Start of session at: Thu Feb  9 12:32:06 2023
+# Process ID: 74528
+# Current directory: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/class_experiments_v21
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent74376 C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment3\class_experiments_v21\class_experiments_v21.xpr
+# Log file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/class_experiments_v21/vivado.log
+# Journal file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/class_experiments_v21\vivado.jou
 # Running On: DESKTOP-TV817D3, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
 #-----------------------------------------------------------
 start_gui
+open_project C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/class_experiments_v21/class_experiments_v21.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment3/class_experiments_v21'
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21'
+INFO: [Project 1-313] Project file moved from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -35,145 +36,8 @@ SoC_auto_pc_0
 SoC_xbar_0
 SoC_rst_ps7_0_100M_0
 
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1484.094 ; gain = 248.207
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  8 12:43:13 2023...
-_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/synth_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_processing_system7_0_0_synth_1' of run 'SoC_processing_system7_0_0_synth_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_processing_system7_0_0_synth_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_0_synth_1' of run 'SoC_axi_gpio_0_0_synth_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_0_synth_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_xbar_0_synth_1' of run 'SoC_xbar_0_synth_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_xbar_0_synth_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_rst_ps7_0_100M_0_synth_1' of run 'SoC_rst_ps7_0_100M_0_synth_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_rst_ps7_0_100M_0_synth_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_1_synth_1' of run 'SoC_axi_gpio_0_1_synth_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_1_synth_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/impl_1' of run 'impl_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/impl_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_processing_system7_0_0_impl_1' of run 'SoC_processing_system7_0_0_impl_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_processing_system7_0_0_impl_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_0_impl_1' of run 'SoC_axi_gpio_0_0_impl_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_0_impl_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_xbar_0_impl_1' of run 'SoC_xbar_0_impl_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_xbar_0_impl_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_rst_ps7_0_100M_0_impl_1' of run 'SoC_rst_ps7_0_100M_0_impl_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_rst_ps7_0_100M_0_impl_1'.
-INFO: [Project 1-1877] Auto incremental dir location 'C:/Users/IMBDID/Desktop/class_experiments_v21/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_1_impl_1' of run 'SoC_axi_gpio_0_1_impl_1' is not writable, setting it to default location 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.srcs/utils_1/imports/SoC_axi_gpio_0_1_impl_1'.
-CRITICAL WARNING: [Board 49-67] The board_part definition was not found for avnet.com:zedboard:part0:1.4. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-WARNING: [BD 41-1661] One or more IPs have been locked in the design 'SoC.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
-List of locked IPs:
-SoC_axi_gpio_0_0
-SoC_processing_system7_0_0
-SoC_axi_gpio_0_1
-SoC_ps7_0_axi_periph_0
-SoC_auto_pc_0
-SoC_xbar_0
-SoC_rst_ps7_0_100M_0
-
-INFO: [Project 1-230] Project 'class_experiments_v21.xpr' upgraded for this version of Vivado.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1661.883 ; gain = 0.000
-report_ip_status -name ip_status 
-update_compile_order -fileset sources_1
-open_hw_manager
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Feb  8 12:28:21 2023] Launched impl_1...
-Run output will be captured here: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/runme.log
-open_run impl_1
-CRITICAL WARNING: [Board 49-67] The board_part definition was not found for avnet.com:zedboard:part0:1.4. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
-INFO: [Device 21-403] Loading part xc7z020clg484-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1779.129 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Constraints 18-4397] Generator change detected checking ShapeConfig Enum. shapeDB will be regenerated.
-INFO: [Constraints 18-5435] Cannot read file, the software version for the checkpoint (2021.1.3247384) does not match the current software version (2022.1.3526262).
-  File : C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper.xbdc.
-Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_board.xdc]
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:3]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:5]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:7]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:9]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:11]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:13]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:15]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:17]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:3]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:5]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:7]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:9]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:11]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:13]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:15]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:17]
-Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
-Finished Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_board.xdc]
-Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_early.xdc]
-Finished Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_early.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.226 . Memory (MB): peak = 1910.555 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.226 . Memory (MB): peak = 1910.555 ; gain = 0.000
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2306.680 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2414.723 ; gain = 752.840
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2022.1
-  **** Build date : Apr 18 2022 at 16:02:36
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2022.1.0
-  ****** Build date   : Apr 13 2022-04:12:08
-    **** Build number : 2022.1.1649790728
-      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2520.137 ; gain = 36.023
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AC8EB7
-open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 4632.531 ; gain = 2112.395
-set_property PROGRAM.FILE {C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper.bit} [get_hw_devices xc7z020_1]
-current_hw_device [get_hw_devices xc7z020_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-write_hw_platform -fixed -include_bit -force -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/SoC_wrapper.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/SoC_wrapper.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/SoC_wrapper.xsa
-INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.1/data/embeddedsw) loading 0 seconds
 INFO: [Vivado 12-8231] Launching Vitis
 INFO: [Vivado 12-417] Running vitis
 INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248AC8EB7
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AC8EB7
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  8 14:50:58 2023...

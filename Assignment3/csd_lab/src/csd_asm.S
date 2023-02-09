@@ -21,17 +21,47 @@ main:
  	mov r2, #16
 
 loop:
-	ldr r3, [r0], #4	//load a word into r3 and update r0 (= r0 + 4)
- 	str r3, [r1], #4	//store the word to memory and update r1 (= r1 + 4)
-
- 	subs r2, r2, #1
- 	bne loop
+ 	ldr r0, =csd_LED_ADDR
+ 	mov r1, #0x1
+ 	str r1, [r0]
+ 	bl csd_main
 
  	ldr r0, =csd_LED_ADDR
- 	mov r1, #0x5
+ 	mov r1, #0x2
  	str r1, [r0]
-
  	bl csd_main
+
+	ldr r0, =csd_LED_ADDR
+ 	mov r1, #0x4
+ 	str r1, [r0]
+ 	bl csd_main
+
+	ldr r0, =csd_LED_ADDR
+ 	mov r1, #0x8
+ 	str r1, [r0]
+ 	bl csd_main
+
+	ldr r0, =csd_LED_ADDR
+ 	mov r1, #0x10
+ 	str r1, [r0]
+ 	bl csd_main
+
+	ldr r0, =csd_LED_ADDR
+ 	mov r1, #0x20
+ 	str r1, [r0]
+ 	bl csd_main
+
+	ldr r0, =csd_LED_ADDR
+ 	mov r1, #0x40
+ 	str r1, [r0]
+ 	bl csd_main
+
+	ldr r0, =csd_LED_ADDR
+ 	mov r1, #0x80
+ 	str r1, [r0]
+ 	bl csd_main
+	
+	b loop
 
 forever:
 	nop

@@ -16,3 +16,9 @@ platform write
 platform generate -domains 
 platform active {csd_platform}
 platform generate
+platform active {csd_platform}
+domain active {zynq_fsbl}
+bsp reload
+domain active {standalone_domain}
+bsp reload
+platform generate -domains 
