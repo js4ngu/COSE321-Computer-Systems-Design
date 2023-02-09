@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <xgpio.h>
+#include "sleep.h"
+#include "xparameters.h"
+
+int csd_main()
+{
+	XGpio dipSW;
+	int status;
+   	XGpio_Initialize(&dipSW, XPAR_SWITCHES_DEVICE_ID);	//initialize input XGpio variable
+	XGpio_SetDataDirection(&dipSW, 1, 0xFF);
+	
+	init_platform();
+	printf("Hello world\n\r");
+	while (1) {
+		status = XGpio_DiscreteRead(&dipSW, 1);
+		printf("%d\r\n");
+		usleep(100000); //100msec
+	}
+
+    cleanup_platform();
+    return 0;
+}

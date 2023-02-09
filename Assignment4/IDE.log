@@ -4128,3 +4128,12 @@ con
 
 17:08:51 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment4\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
 17:09:20 INFO  : Disconnected from the channel tcfchan#27.
+18:23:14 DEBUG : Logs will be stored at 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment4/IDE.log'.
+18:23:14 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment4\temp_xsdb_launch_script.tcl
+18:23:16 INFO  : XSCT server has started successfully.
+18:23:16 INFO  : plnx-install-location is set to ''
+18:23:16 INFO  : Successfully done setting XSCT server connection channel  
+18:23:16 INFO  : Successfully done setting workspace for the tool. 
+18:23:17 INFO  : Registering command handlers for Vitis TCF services
+18:23:17 INFO  : Successfully done query RDI_DATADIR 
+18:23:17 INFO  : Platform repository initialization has completed.

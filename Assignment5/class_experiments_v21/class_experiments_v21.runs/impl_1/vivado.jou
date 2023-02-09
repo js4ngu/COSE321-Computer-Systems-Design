@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Feb  8 12:28:33 2023
+# Process ID: 329292
+# Current directory: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1
+# Command line: vivado.exe -log SoC_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SoC_wrapper.tcl -notrace
+# Log file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper.vdi
+# Journal file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1\vivado.jou
+# Running On: DESKTOP-TV817D3, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
+#-----------------------------------------------------------
+source SoC_wrapper.tcl -notrace

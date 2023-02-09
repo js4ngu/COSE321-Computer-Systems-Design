@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Feb  9 16:22:53 2023
-# Process ID: 78672
+# Start of session at: Thu Feb  9 18:22:36 2023
+# Process ID: 85260
 # Current directory: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment4/class_experiments_v21
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent86160 C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment4\class_experiments_v21\class_experiments_v21.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent93988 C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment4\class_experiments_v21\class_experiments_v21.xpr
 # Log file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment4/class_experiments_v21/vivado.log
 # Journal file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment4/class_experiments_v21\vivado.jou
 # Running On: DESKTOP-TV817D3, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
@@ -36,10 +36,35 @@ SoC_auto_pc_0
 SoC_xbar_0
 SoC_rst_ps7_0_100M_0
 
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1499.125 ; gain = 263.164
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1658.969 ; gain = 0.000
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+update_compile_order -fileset sources_1
+close_project
+open_project C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment5/class_experiments_v21/class_experiments_v21.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment5/class_experiments_v21'
+INFO: [Project 1-313] Project file moved from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'SoC.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+SoC_axi_gpio_0_0
+SoC_processing_system7_0_0
+SoC_axi_gpio_0_1
+SoC_ps7_0_axi_periph_0
+SoC_auto_pc_0
+SoC_xbar_0
+SoC_rst_ps7_0_100M_0
+
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
 update_compile_order -fileset sources_1
 INFO: [Vivado 12-8231] Launching Vitis
 INFO: [Vivado 12-417] Running vitis
 INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Feb  9 17:09:25 2023...

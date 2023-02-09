@@ -1,0 +1,16 @@
+18:54:15 **** Incremental Build of configuration Debug for project csd_lab ****
+make all 
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory main-build
+'Building file: ../src/csd_asm.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/csd_asm.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/csd_asm.d" -MT"src/csd_asm.o" -o "src/csd_asm.o" "../src/csd_asm.S"
+../src/csd_asm.S: Assembler messages:
+../src/csd_asm.S:28: Error: bad instruction `lnodr r1,=string'
+make[1]: *** [src/subdir.mk:37: src/csd_asm.o] Error 1
+make: *** [makefile:34: all] Error 2
+
+18:54:16 Build Finished (took 281ms)
+
