@@ -1,0 +1,10 @@
+17:33:17 **** Incremental Build of configuration Debug for project csd_lab_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 53579 C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm standalone_domain C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment7/csd_lab_system/Debug/system.bif
+sdcard_gen --xpfm C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm --sys_config csd_platform --bif C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment7/csd_lab_system/Debug/system.bif --bitstream C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment7/csd_lab/_ide/bitstream/SoC_wrapper.bit --elf C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment7/csd_lab/Debug/csd_lab.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment7/csd_lab/_ide/bitstream/SoC_wrapper.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen  -image C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment7/csd_lab_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+17:33:21 Build Finished (took 4s.336ms)
+

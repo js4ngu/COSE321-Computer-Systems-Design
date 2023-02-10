@@ -4,6 +4,8 @@
         "xgpio.h": "c",
         "xil_printf.h": "c",
         "xparameters.h": "c",
-        "xgpiops.h": "c"
+        "xgpiops.h": "c",
+        "sleep.h": "c",
+        "stdio.h": "c"
     }
 }

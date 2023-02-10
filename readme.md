@@ -13,13 +13,13 @@
 * **완료**
 ### Assignment5
 ![](asset\csd-assignment-5-2022_1.jpg)
-* 진행예정 -> 일단 pass
+* In progress -> 일단 pass
 ### Assignment6
 ![](asset\csd-assignment-6-2022_1.jpg)
 * 진행예정 -> 일단 pass
 ### Assignment7
 ![](asset\csd-assignment-7-2022_1.jpg)
-* 진행예정
+* 진행중
 ### Assignment8
 ![](asset\csd-assignment-8-2022_1.jpg)
 * 진행예정
