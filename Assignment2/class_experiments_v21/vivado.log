@@ -2,62 +2,30 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Feb  8 15:02:16 2023
-# Process ID: 9612
+# Start of session at: Fri Feb 10 14:33:03 2023
+# Process ID: 132032
 # Current directory: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12328 C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment2\class_experiments_v21\class_experiments_v21.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent145968 C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment2\class_experiments_v21\class_experiments_v21.xpr
 # Log file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21/vivado.log
 # Journal file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21\vivado.jou
 # Running On: DESKTOP-TV817D3, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
-#-----------------------------------------------------------sstart_guioopen_project C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21/class_experiments_v21.xpr
+#-----------------------------------------------------------
+start_gui
+open_project C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21/class_experiments_v21.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21'WWARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+Current project path is 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not availableIINFO: [Project 1-313] Project file moved from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21' since last save.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.WWARNING: [BD 41-1661] One or more IPs have been locked in the design 'SoC.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
-List of locked IPs:
-SoC_axi_gpio_0_0
-SoC_processing_system7_0_0
-SoC_axi_gpio_0_1
-SoC_ps7_0_axi_periph_0
-SoC_auto_pc_0
-SoC_xbar_0
-SoC_rst_ps7_0_100M_0
-oopen_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1480.320 ; gain = 262.086uupdate_compile_order -fileset sources_1
-INFO: [Vivado 12-8231] Launching Vitis
-INFO: [Vivado 12-417] Running vitis
-INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  8 15:20:02 2023...
- {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/clock_signal/busdef.tcl} "
-    (in namespace eval "::xilinx.com_signal_clock_1.0" script line 1)
-    invoked from within
-"namespace eval ::xilinx.com_signal_clock_1.0 { source -notrace {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/clock_signal/busdef.tcl} }"
-ERROR: [BD 41-69] Error sourcing TCL script: 
-    while executing
-"source -notrace {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/gt_outclk/busdef.tcl} "
-    (in namespace eval "::xilinx.com_signal_gt_outclk_1.0" script line 1)
-    invoked from within
-"namespace eval ::xilinx.com_signal_gt_outclk_1.0 { source -notrace {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/gt_outclk/busdef.tcl} }"
-ERROR: [BD 41-69] Error sourcing TCL script: 
-    while executing
-"source -notrace {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/gt_usrclk/busdef.tcl} "
-    (in namespace eval "::xilinx.com_signal_gt_usrclk_1.0" script line 1)
-    invoked from within
-"namespace eval ::xilinx.com_signal_gt_usrclk_1.0 { source -notrace {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/gt_usrclk/busdef.tcl} }"
-ERROR: [BD 41-69] Error sourcing TCL script: 
-    while executing
-"source -notrace {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/interrupt_signal/busdef.tcl} "
-    (in namespace eval "::xilinx.com_signal_interrupt_1.0" script line 1)
-    invoked from within
-"namespace eval ::xilinx.com_signal_interrupt_1.0 { source -notrace {C:/Xilinx/Vivado/2022.1/data/rsb/busdef/interrupt_signal/busdef.tcl} }"
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
 WARNING: [BD 41-1661] One or more IPs have been locked in the design 'SoC.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
 List of locked IPs:
 SoC_axi_gpio_0_0
@@ -68,6 +36,13 @@ SoC_auto_pc_0
 SoC_xbar_0
 SoC_rst_ps7_0_100M_0
 
-INFO: [Common 17-344] 'open_project' was cancelled
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1479.527 ; gain = 243.664
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  8 15:03:06 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 10 14:59:27 2023...

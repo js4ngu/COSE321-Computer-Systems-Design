@@ -1,0 +1,9 @@
+14:34:57 DEBUG : Logs will be stored at 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment2/class_experiments_v21/IDE.log'.
+14:34:59 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment2\class_experiments_v21\temp_xsdb_launch_script.tcl
+14:34:59 INFO  : Registering command handlers for Vitis TCF services
+14:34:59 INFO  : Platform repository initialization has completed.
+14:35:01 INFO  : XSCT server has started successfully.
+14:35:01 INFO  : plnx-install-location is set to ''
+14:35:01 INFO  : Successfully done setting XSCT server connection channel  
+14:35:01 INFO  : Successfully done query RDI_DATADIR 
+14:35:01 INFO  : Successfully done setting workspace for the tool. 

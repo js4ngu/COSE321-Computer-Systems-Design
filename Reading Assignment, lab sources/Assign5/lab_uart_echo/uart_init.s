@@ -53,10 +53,11 @@
 	bic		r1, r1, #0x0000003C		// clear TXDIS, TXEN, RXDIS, RXEN (bit[5][4][3][2])
 	orr		r1, r1, #0x00000014		// TXDIS = 0 TXEN = 1 RXDIS = 0 RXEN = 1 (bit[5][4][3][2])
 	str		r1, [r0]				// Write
-
+z
 # 	4-5. Enable the Controller
 	ldr		r0, =uart_Control_reg0
 	ldr		r1, =0x00000117			// 0x00000117 to uart.Control_reg0
 	str		r1, [r0]				// Write
 
 .endm
+	

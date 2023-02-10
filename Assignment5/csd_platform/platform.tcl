@@ -26,3 +26,6 @@ platform generate
 platform generate
 platform active {csd_platform}
 platform generate -domains 
+platform active {csd_platform}
+platform generate -domains 
+platform generate -domains 

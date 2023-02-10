@@ -6,6 +6,7 @@
 // ------------------------------------------
 
 #include "uart_init.s"
+#include "macro_regs.h"
 
 .global main
 
@@ -17,16 +18,19 @@ forever:
 
 	bl UART_hello // Print out "Hello World!"
 
-	b forever
+	b FIN_
 
+FIN_: 
+	nop
+	b FIN_
 
 //
 // UART_hello: A simple function to transmit "Hello World!"
 //
 
 UART_hello:
-	lnodr	r1, =string
-//	ldr	r1, [r16] : bad inst
+
+	ldr	r1, =macro_r9
 	ldr	r0, =uart_Channel_sts_reg0
 
 TX_loop:
@@ -48,7 +52,7 @@ TX_loop:
 
 	.data
 string:
-	.ascii "Hello World!"
+	.ascii "Test!"
 	.byte 0x0D
 	.byte 0x0A
 	.byte 0x00

@@ -19,3 +19,8 @@ timestamp=[2023-02-08 15:10:06], mode=BUILD, duration=0:00:00.566, duration_ms=5
 timestamp=[2023-02-08 15:10:11], mode=BUILD, duration=0:00:04.407, duration_ms=4407, data={name=csd_lab_system, configuration=Debug, clean_build=false}
 timestamp=[2023-02-08 15:12:07], mode=BUILD, duration=0:00:00.481, duration_ms=481, data={name=csd_lab, configuration=Debug, clean_build=false}
 timestamp=[2023-02-08 15:12:12], mode=BUILD, duration=0:00:04.259, duration_ms=4259, data={name=csd_lab_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-10 14:35:35], mode=WORKBENCH_START, duration=0:00:05.105, duration_ms=5105, data={}
+timestamp=[2023-02-10 14:35:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.874, duration_ms=874, data={editors_count=9, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,csd_lab,csd_lab_system,csd_platform}
+timestamp=[2023-02-10 14:35:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.636, duration_ms=636, data={}
+timestamp=[2023-02-10 14:35:58], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=csd_lab, configuration=Debug, clean_build=false}
+timestamp=[2023-02-10 14:36:02], mode=BUILD, duration=0:00:04.461, duration_ms=4461, data={name=csd_lab_system, configuration=Debug, clean_build=false}

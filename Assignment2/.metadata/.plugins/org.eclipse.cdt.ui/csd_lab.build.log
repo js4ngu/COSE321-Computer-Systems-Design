@@ -1,4 +1,4 @@
-15:12:07 **** Incremental Build of configuration Debug for project csd_lab ****
+14:35:57 **** Incremental Build of configuration Debug for project csd_lab ****
 make all 
 C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -21,5 +21,5 @@ arm-none-eabi-size csd_lab.elf  |tee "csd_lab.elf.size"
 'Finished building: csd_lab.elf.size'
 ' '
 
-15:12:07 Build Finished (took 474ms)
+14:35:58 Build Finished (took 576ms)
 

@@ -1,0 +1,17 @@
+#define macro_r0    0x10000123
+#define macro_r1    0xffee0112
+#define macro_r2    0x9800ab00
+#define macro_r3    0xfe030010
+#define macro_r4    0xffff1000
+#define macro_r5    0xc1230112
+#define macro_r6    0x18001100
+#define macro_r7    0xbe100030
+#define macro_r8    0x22000140
+#define macro_r9    0x55ee0112
+#define macro_r10   0x12001200
+#define macro_r11   0x98032210
+#define macro_r12   0x33000100
+#define macro_r13   0xccee0112
+#define macro_r14   0x3400ab00
+#define macro_r15   0x00100304
+#define macro_cprs  0x600000d3
