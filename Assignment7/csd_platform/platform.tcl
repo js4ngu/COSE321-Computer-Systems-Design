@@ -17,3 +17,5 @@ platform generate -domains
 platform active {csd_platform}
 platform generate
 platform generate -domains zynq_fsbl 
+platform active {csd_platform}
+platform generate -domains 
