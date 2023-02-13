@@ -18,10 +18,26 @@
 #include "xil_printf.h"
 
 
-int csd_main()
-{
+
+
+int csd_main() {
     init_platform();
-	print("Hello World\n\r");
+
+    static int hour = 0;
+    static int min = 0;
+    static int sec = 0;
+
+	xil_printf("%d : %d : %d\r", hour, min, sec);
     cleanup_platform();
+    sec++;
+    if (sec >= 60) {
+        xil_printf("%d : %d :   \r", hour, min, sec);
+        sec = 0;
+        min++;
+    }
+    if (min >= 60) {
+        min = 0;
+        hour++;
+    }    
     return 0;
 }

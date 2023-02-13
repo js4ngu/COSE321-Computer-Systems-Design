@@ -123,7 +123,7 @@ main:
 
  	// Private Timer Control Register
   	ldr r0, =PRIVATE_CONTROL
- 	mov r1, #10 << 8   // Prescalar
+ 	mov r1, #20 << 8   // Prescalar
  	orr r1, r1, #7     // IRQ Enable, Auto-Reload, Timer Enable
  	str r1, [r0]
 
@@ -166,12 +166,12 @@ csd_IRQ_ISR:
 	ldr r3, [r0]
 
  	//// Toggle LEDs
-	//ldr r0, =csd_LED_ADDR
-	//ldr r1, =led_value
-	//ldr r2, [r1]
-	//eor r2, r2, #0xFF
-	//str r2, [r0]
-	//str r2, [r1]
+	ldr r0, =csd_LED_ADDR
+	ldr r1, =led_value
+	ldr r2, [r1]
+	eor r2, r2, #0xFF
+	str r2, [r0]
+	str r2, [r1]
 
 	// C function call
 	stmfd sp!, {r0-r12, lr}

@@ -173,12 +173,18 @@ csd_IRQ_ISR:
 	str r2, [r0]
 	str r2, [r1]
 
+	// C function call
+	stmfd sp!, {r0-r12, lr}
+	bl csd_main
+	ldmfd sp!, {r0-r12, lr}
+
+
  	// Clear Interrupt Status bit
   	ldr r0, =PRIVATE_STATUS
   	mov r1, #1
 	str r1, [r0]
 
- 	// End-of-Interrupt
+ 	// End-of-Interrupt	
   	ldr r0, =GICC_EOIR
 	str r3, [r0]
 
@@ -200,3 +206,4 @@ svc_stack:     .space 1024
 svc_stack_top:
 
 led_value: .word 	0xC3
+Footer

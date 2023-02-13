@@ -156,3 +156,10 @@ dismissDialog("Launch Vitis IDE"); // bA
 // HMemoryUtils.trashcanNow. Engine heap size: 1,459 MB. GUI used memory: 73 MB. Current time: 2/13/23, 2:57:15 PM KST
 // HMemoryUtils.trashcanNow. Engine heap size: 1,459 MB. GUI used memory: 73 MB. Current time: 2/13/23, 3:27:16 PM KST
 // HMemoryUtils.trashcanNow. Engine heap size: 1,459 MB. GUI used memory: 72 MB. Current time: 2/13/23, 3:57:16 PM KST
+// Elapsed time: 10132 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_VITIS_IDE, "Launch Vitis IDE"); // ar
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_VITIS_IDE
+dismissDialog("Launch Vitis IDE"); // bA

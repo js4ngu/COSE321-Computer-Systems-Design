@@ -37,3 +37,6 @@ update_compile_order -fileset sources_1
 eINFOINFO: [Common 17-206] Exiting Vivado at Mon Feb 13 13:27:44 2023...
 is
 INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
