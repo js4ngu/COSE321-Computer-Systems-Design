@@ -19,7 +19,7 @@
 * 진행예정 -> 일단 pass
 ### Assignment7
 ![](./asset/csd-assignment-7-2022_1.jpg)
-* 진행중~
+* **완료**
 ### Assignment8
 ![](./asset/csd-assignment-8-2022_1.jpg)
 * 진행예정
