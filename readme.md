@@ -12,7 +12,7 @@
 ![](./asset/csd-assignment-4-2022_1.jpg)
 * **완료**
 ### Assignment5
-![](asset\csd-assignment-5-2022_1.jpg)
+![](./asset/csd-assignment-5-2022_1.jpg)
 * 진행예정 -> 일단 pass
 ### Assignment6
 ![](./asset/csd-assignment-6-2022_1.jpg)
