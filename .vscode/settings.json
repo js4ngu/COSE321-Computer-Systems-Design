@@ -6,6 +6,7 @@
         "xparameters.h": "c",
         "xgpiops.h": "c",
         "sleep.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "xparameters_ps.h": "c"
     }
 }

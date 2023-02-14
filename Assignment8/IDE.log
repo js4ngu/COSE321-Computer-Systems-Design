@@ -5185,3 +5185,620 @@ con
 
 17:00:14 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment7\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
 17:01:30 INFO  : Disconnected from the channel tcfchan#19.
+13:50:26 DEBUG : Logs will be stored at 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/IDE.log'.
+13:50:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\temp_xsdb_launch_script.tcl
+13:50:30 INFO  : Registering command handlers for Vitis TCF services
+13:50:30 INFO  : XSCT server has started successfully.
+13:50:30 INFO  : plnx-install-location is set to ''
+13:50:30 INFO  : Successfully done setting XSCT server connection channel  
+13:50:31 INFO  : Platform repository initialization has completed.
+13:50:35 INFO  : Successfully done setting workspace for the tool. 
+13:50:35 INFO  : Successfully done query RDI_DATADIR 
+13:54:04 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+13:54:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa is already opened
+
+14:01:32 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+14:02:32 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+14:02:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:35 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:02:35 INFO  : 'jtag frequency' command is executed.
+14:02:35 INFO  : Context for 'APU' is selected.
+14:02:35 INFO  : System reset is completed.
+14:02:38 INFO  : 'after 3000' command is executed.
+14:02:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:02:41 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:02:41 INFO  : Context for 'APU' is selected.
+14:02:41 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:02:41 INFO  : 'configparams force-mem-access 1' command is executed.
+14:02:41 INFO  : Context for 'APU' is selected.
+14:02:41 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:02:41 INFO  : 'ps7_init' command is executed.
+14:02:41 INFO  : 'ps7_post_config' command is executed.
+14:02:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:41 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:02:41 INFO  : 'configparams force-mem-access 0' command is executed.
+14:02:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:02:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:41 INFO  : 'con' command is executed.
+14:02:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:02:41 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:09:24 INFO  : Disconnected from the channel tcfchan#2.
+14:09:38 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:09:41 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa is already opened
+
+14:10:00 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+14:11:00 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+14:11:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:02 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:11:02 INFO  : 'jtag frequency' command is executed.
+14:11:02 INFO  : Context for 'APU' is selected.
+14:11:02 INFO  : System reset is completed.
+14:11:05 INFO  : 'after 3000' command is executed.
+14:11:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:11:08 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:11:08 INFO  : Context for 'APU' is selected.
+14:11:08 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:11:08 INFO  : 'configparams force-mem-access 1' command is executed.
+14:11:08 INFO  : Context for 'APU' is selected.
+14:11:08 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:11:08 INFO  : 'ps7_init' command is executed.
+14:11:08 INFO  : 'ps7_post_config' command is executed.
+14:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:08 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:11:08 INFO  : 'configparams force-mem-access 0' command is executed.
+14:11:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:11:08 INFO  : 'con' command is executed.
+14:11:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:11:08 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:36:02 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:36:30 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:36:39 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:37:09 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:37:24 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:42:36 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:42:39 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa is already opened
+
+14:42:50 INFO  : Disconnected from the channel tcfchan#4.
+14:42:57 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+14:43:57 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+14:43:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:44:00 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:44:00 INFO  : 'jtag frequency' command is executed.
+14:44:00 INFO  : Context for 'APU' is selected.
+14:44:00 INFO  : System reset is completed.
+14:44:03 INFO  : 'after 3000' command is executed.
+14:44:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:44:05 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:44:05 INFO  : Context for 'APU' is selected.
+14:44:07 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:44:07 INFO  : 'configparams force-mem-access 1' command is executed.
+14:44:07 INFO  : Context for 'APU' is selected.
+14:44:07 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:44:07 INFO  : 'ps7_init' command is executed.
+14:44:07 INFO  : 'ps7_post_config' command is executed.
+14:44:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:07 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:44:07 INFO  : 'configparams force-mem-access 0' command is executed.
+14:44:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:44:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:07 INFO  : 'con' command is executed.
+14:44:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:44:07 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:46:14 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:46:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa is already opened
+
+14:46:17 INFO  : Disconnected from the channel tcfchan#6.
+14:49:45 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+14:50:45 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+14:50:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:50:48 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:50:48 INFO  : 'jtag frequency' command is executed.
+14:50:48 INFO  : Context for 'APU' is selected.
+14:50:48 INFO  : System reset is completed.
+14:50:51 INFO  : 'after 3000' command is executed.
+14:50:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:50:53 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:50:53 INFO  : Context for 'APU' is selected.
+14:50:55 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:50:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:50:55 INFO  : Context for 'APU' is selected.
+14:50:55 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:50:56 INFO  : 'ps7_init' command is executed.
+14:50:56 INFO  : 'ps7_post_config' command is executed.
+14:50:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:50:56 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:50:56 INFO  : 'configparams force-mem-access 0' command is executed.
+14:50:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:50:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:50:56 INFO  : 'con' command is executed.
+14:50:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:50:56 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:51:27 INFO  : Disconnected from the channel tcfchan#8.
+14:51:28 INFO  : Checking for BSP changes to sync application flags for project 'csd_lab'...
+14:51:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa is already opened
+
+14:51:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:43 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:51:43 INFO  : 'jtag frequency' command is executed.
+14:51:43 INFO  : Context for 'APU' is selected.
+14:51:43 INFO  : System reset is completed.
+14:51:46 INFO  : 'after 3000' command is executed.
+14:51:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:51:48 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:51:48 INFO  : Context for 'APU' is selected.
+14:51:48 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:51:48 INFO  : 'configparams force-mem-access 1' command is executed.
+14:51:48 INFO  : Context for 'APU' is selected.
+14:51:48 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:51:49 INFO  : 'ps7_init' command is executed.
+14:51:49 INFO  : 'ps7_post_config' command is executed.
+14:51:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:49 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:51:49 INFO  : 'configparams force-mem-access 0' command is executed.
+14:51:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:51:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:49 INFO  : 'con' command is executed.
+14:51:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:51:49 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:51:59 INFO  : Disconnected from the channel tcfchan#10.
+14:52:08 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+14:53:09 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+14:53:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:53:11 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:53:11 INFO  : 'jtag frequency' command is executed.
+14:53:11 INFO  : Context for 'APU' is selected.
+14:53:11 INFO  : System reset is completed.
+14:53:14 INFO  : 'after 3000' command is executed.
+14:53:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:53:16 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:53:17 INFO  : Context for 'APU' is selected.
+14:53:18 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:53:18 INFO  : 'configparams force-mem-access 1' command is executed.
+14:53:18 INFO  : Context for 'APU' is selected.
+14:53:18 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:53:19 INFO  : 'ps7_init' command is executed.
+14:53:19 INFO  : 'ps7_post_config' command is executed.
+14:53:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:53:19 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:53:19 INFO  : 'configparams force-mem-access 0' command is executed.
+14:53:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:53:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:53:19 INFO  : 'con' command is executed.
+14:53:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:53:19 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:53:49 INFO  : Disconnected from the channel tcfchan#11.
+14:53:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:53:52 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:53:52 INFO  : 'jtag frequency' command is executed.
+14:53:52 INFO  : Context for 'APU' is selected.
+14:53:52 INFO  : System reset is completed.
+14:53:55 INFO  : 'after 3000' command is executed.
+14:53:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:53:57 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:53:57 INFO  : Context for 'APU' is selected.
+14:53:59 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:53:59 INFO  : 'configparams force-mem-access 1' command is executed.
+14:53:59 INFO  : Context for 'APU' is selected.
+14:53:59 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:53:59 INFO  : 'ps7_init' command is executed.
+14:53:59 INFO  : 'ps7_post_config' command is executed.
+14:53:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:00 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:00 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:00 INFO  : 'con' command is executed.
+14:54:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:54:00 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:54:38 INFO  : Disconnected from the channel tcfchan#12.
+14:54:44 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+14:55:44 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+14:55:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:47 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:55:47 INFO  : 'jtag frequency' command is executed.
+14:55:47 INFO  : Context for 'APU' is selected.
+14:55:47 INFO  : System reset is completed.
+14:55:50 INFO  : 'after 3000' command is executed.
+14:55:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:55:52 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:55:52 INFO  : Context for 'APU' is selected.
+14:55:54 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:55:54 INFO  : 'configparams force-mem-access 1' command is executed.
+14:55:54 INFO  : Context for 'APU' is selected.
+14:55:54 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:55:55 INFO  : 'ps7_init' command is executed.
+14:55:55 INFO  : 'ps7_post_config' command is executed.
+14:55:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:55:55 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:55:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:55:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:55:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:55:55 INFO  : 'con' command is executed.
+14:55:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:55:55 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+14:57:18 INFO  : Disconnected from the channel tcfchan#13.
+14:57:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:57:20 INFO  : Jtag cable 'Digilent Zed 210248AC8EB7' is selected.
+14:57:20 INFO  : 'jtag frequency' command is executed.
+14:57:20 INFO  : Context for 'APU' is selected.
+14:57:20 INFO  : System reset is completed.
+14:57:23 INFO  : 'after 3000' command is executed.
+14:57:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}' command is executed.
+14:57:26 INFO  : Device configured successfully with "C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit"
+14:57:26 INFO  : Context for 'APU' is selected.
+14:57:27 INFO  : Hardware design and registers information is loaded from 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa'.
+14:57:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:57:27 INFO  : Context for 'APU' is selected.
+14:57:27 INFO  : Sourcing of 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl' is done.
+14:57:28 INFO  : 'ps7_init' command is executed.
+14:57:28 INFO  : 'ps7_post_config' command is executed.
+14:57:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:57:28 INFO  : The application 'C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:57:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:57:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8EB7" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8EB7-23727093-0"}
+fpga -file C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/hw/SoC_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:57:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:57:28 INFO  : 'con' command is executed.
+14:57:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:57:28 INFO  : Launch script is exported to file 'C:\File\Lec\undergraduate\COSE321-Computer-Systems-Design\Assignment8\csd_lab_system\_ide\scripts\systemdebugger_csd_lab_system_standalone.tcl'
+15:01:20 INFO  : Disconnected from the channel tcfchan#14.

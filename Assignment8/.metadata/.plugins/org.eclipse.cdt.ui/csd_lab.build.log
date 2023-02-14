@@ -1,4 +1,4 @@
-16:57:55 **** Incremental Build of configuration Debug for project csd_lab ****
+14:51:30 **** Incremental Build of configuration Debug for project csd_lab ****
 make all 
 C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size csd_lab.elf  |tee "csd_lab.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  22633	   4232	  22584	  49449	   c129	csd_lab.elf
+  19056	   1144	  22568	  42768	   a710	csd_lab.elf
 'Finished building: csd_lab.elf.size'
 ' '
 
-16:57:56 Build Finished (took 534ms)
+14:51:30 Build Finished (took 477ms)
 
