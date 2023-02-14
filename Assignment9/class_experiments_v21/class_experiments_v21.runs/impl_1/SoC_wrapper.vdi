@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Feb  8 12:28:33 2023
+# Process ID: 329292
+# Current directory: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1
+# Command line: vivado.exe -log SoC_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SoC_wrapper.tcl -notrace
+# Log file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper.vdi
+# Journal file: C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1\vivado.jou
+# Running On: DESKTOP-TV817D3, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
+#-----------------------------------------------------------
+source SoC_wrapper.tcl -notrace
+Command: open_checkpoint SoC_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1637.109 ; gain = 0.000
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for avnet.com:zedboard:part0:1.4. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for avnet.com:zedboard:part0:1.4. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1637.109 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4397] Generator change detected checking ShapeConfig Enum. shapeDB will be regenerated.
+INFO: [Constraints 18-5435] Cannot read file, the software version for the checkpoint (2021.1.3247384) does not match the current software version (2022.1.3526262).
+  File : C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper.xbdc.
+Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_board.xdc]
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:3]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:5]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:7]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:9]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:11]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:13]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:15]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_0/SoC_axi_gpio_0_0_board.xdc:17]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:3]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:5]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:7]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:9]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:11]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:13]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:15]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.gen/sources_1/bd/SoC/ip/SoC_axi_gpio_0_1/SoC_axi_gpio_0_1_board.xdc:17]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+Finished Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_board.xdc]
+Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_early.xdc]
+Finished Parsing XDC File [C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/class_experiments_v21/class_experiments_v21.runs/impl_1/SoC_wrapper_routed/SoC_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1637.109 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1637.109 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1688.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2021.1 (64-bit) build 3247384
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1688.211 ; gain = 51.102
+Command: write_bitstream -force SoC_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./SoC_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 18 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 2371.973 ; gain = 683.762
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  8 12:29:08 2023...

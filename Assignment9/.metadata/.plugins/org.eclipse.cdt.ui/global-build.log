@@ -1,0 +1,31 @@
+Nothing to build in platform 'csd_platform'
+
+14:51:30 **** Incremental Build of configuration Debug for project csd_lab ****
+make all 
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+C:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory main-build
+'Building file: ../src/csd_asm.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/csd_asm.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/csd_asm.d" -MT"src/csd_asm.o" -o "src/csd_asm.o" "../src/csd_asm.S"
+'Finished building: ../src/csd_asm.S'
+' '
+'Building target: csd_lab.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bsplib/lib -o "csd_lab.elf"  ./src/csd_asm.o ./src/csd_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: csd_lab.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size csd_lab.elf  |tee "csd_lab.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19056	   1144	  22568	  42768	   a710	csd_lab.elf
+'Finished building: csd_lab.elf.size'
+' '
+14:51:30 **** Incremental Build of configuration Debug for project csd_lab_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50359 C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm standalone_domain C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab_system/Debug/system.bif
+sdcard_gen --xpfm C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment1/csd_platform/export/csd_platform/csd_platform.xpfm --sys_config csd_platform --bif C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab_system/Debug/system.bif --bitstream C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit --elf C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/Debug/csd_lab.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab/_ide/bitstream/SoC_wrapper.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen  -image C:/File/Lec/undergraduate/COSE321-Computer-Systems-Design/Assignment8/csd_lab_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

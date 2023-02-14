@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xscutimer.h"
+
+int csd_main() {
+	XScuTimer ptrTIM;
+	s32 status;
+	init_platform();
+	printf("Hello world\r\n");
+
+	status = XScuTimer_SelfTest(&ptrTIM);
+	printf("%lu",status);
+    cleanup_platform();
+    return 0;
+}
